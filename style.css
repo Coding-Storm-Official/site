@@ -1,0 +1,256 @@
+body {
+   font-family: "Archivo Black", "Archivo", sans-serif;
+  background-color: black;
+  color : white;
+  height: 100%; 
+   margin: 0; 
+	}
+.background { 
+            position: absolute;
+            height: 100%; 
+            width: 100%; 
+            background-image: url( 
+"cs.png"); 
+            background-size: cover; 
+            background-position: center; 
+            filter: blur(10px); 
+              z-index: -1; 
+} 
+
+
+p {
+  margin: calc(50vh - 40px) auto 0 auto;
+  font-size: 65px;
+  text-transform: uppercase;
+  font-family: "Archivo Black", "Archivo", sans-serif;
+  font-weight: normal;
+  display: block;
+  height: auto;
+  text-align: center;
+}
+
+p {
+  margin: calc(50vh - 40px) auto 0 auto;
+  font-size: 65px;
+  text-transform: uppercase;
+  font-family: "Archivo Black", "Archivo", sans-serif;
+  font-weight: normal;
+  display: block;
+  height: auto;
+  text-align: center;
+}
+
+
+.logo-1 {
+  color: white;
+  text-shadow:
+    0 0 150px #0033ff,
+    0 0 180px #ff0000,
+    0 0 40px #e8e8e8;
+}
+
+
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #000000;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: #000000;
+  color: #00eeff;
+}
+.active {
+  background: #000000;
+  color: #00eeff;
+}
+.imgg{
+  display: block;
+  width: 50px;
+  height: 10px;
+  margin-bottom: 30px;
+}
+
+
+
+.btn {
+  color: #ffffff;
+  cursor: pointer;
+  clear: both;
+  display: block;
+  font-size: 150%;
+  margin: 0 auto 60px;
+  padding: 10px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: all 500ms linear;
+  width: 160px;
+  border-radius: 25px;
+  background-color: #000000;
+  box-shadow: 0 0 190px 0 #000000;
+   border: 1px solid white;
+}
+.btn::after {
+  background-color: #ffdd00;
+  border-radius: 25px;
+  content: ""; /*no fluid effect if this is removed*/
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transition: none;
+  width: 0;
+}
+.btn:hover {
+  background-color: #000000;
+  box-shadow: 0 0 19px 0 #ffdd00;
+  color: #ffdd00;
+  text-decoration: none;
+}
+.btn:hover::after {
+  background-color: rgba(255, 255, 255, 0);
+  transition: all 300ms ease-out;
+  width: 100%;
+}
+.btn-left{
+  margin-top: 10px;
+  margin-right: 50px;
+}
+
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #0087ca;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0087ca;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.cert{
+  padding-top : 190px;
+  display: block;
+  height: auto;
+  text-align: center;
+}
+
+
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  box-sizing: 0 10px 10px;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+.column {
+  float: left;
+  width: 16.66%;
+  height: 10px;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}

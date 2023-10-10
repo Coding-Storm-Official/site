@@ -1,0 +1,29 @@
+@media only screen and (max-width: 873px) {
+  body{
+    background-color: black;
+  }
+  img{
+    max-width: 95%;
+    height: auto;
+  }
+  .shadow{
+    display:block;
+    place-items: center;
+    align-items: center;
+    margin: 0% auto;
+    margin-top: 50px;
+    padding-left:30px;
+    padding-top :40px;
+	  width: 90%;
+	  height: 100px;
+    font-size: 2.5rem;
+  }
+  .btn-left{
+    margin-top: 50px;
+    margin-left: 30px;
+  }
+  .btn{
+    font-size: 1.3em;
+    width: 130px;
+  }
+}
